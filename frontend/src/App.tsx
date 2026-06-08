@@ -1,12 +1,12 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./components/pages/HomePage";
+// import HomePage from "./components/pages/HomePage";
 
 //Lazy load other pages
 // const HomePage = lazy(() => import("./components/pages/HomePage"));
-// const HomePage = lazy(() => new Promise((resolve) => {
-//   setTimeout(resolve, 2000);
-// }).then(() => import("./components/pages/HomePage")));
+const HomePage = lazy(() => new Promise((resolve) => {
+  setTimeout(resolve, 2000);
+}).then(() => import("./components/pages/HomePage")));
 
 const LandingPage = lazy(() => import("./components/pages/LandingPage"));
 const AboutPage = lazy(() => import("./components/pages/AboutPage"));
@@ -18,7 +18,9 @@ const router = createBrowserRouter([
   {
     path: "/",
     element:
-      <HomePage />,
+      <Suspense fallback="Loading...">
+        <HomePage />
+      </Suspense>,
     errorElement: <div>Error loading page</div>,
     children: [
       {
@@ -72,24 +74,8 @@ const router = createBrowserRouter([
 
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000); // Simulate a loading time of 5 seconds
-
-    return () => clearTimeout(timer); // Cleanup the timer on unmount
-  }, []);
-
   return (
-    <>
-      {isLoading ? (
-        <div>Loading...</div>
-      ) : (
-        <RouterProvider router={router} />
-      )}
-    </>
+    <RouterProvider router={router} />
   );
 };
 export default App;
