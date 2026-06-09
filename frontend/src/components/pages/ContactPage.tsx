@@ -1,6 +1,8 @@
+import { ContactPageWrapper } from "../index";
+
 const ContactPage = () => {
     return (
-        <div>ContactPage</div>
+        <ContactPageWrapper>ContactPage</ContactPageWrapper>
     );
 };
 export default ContactPage;

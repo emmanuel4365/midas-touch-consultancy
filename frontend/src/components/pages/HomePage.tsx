@@ -1,15 +1,24 @@
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Footer from "../reusable/Footer";
 import NavBar from "../reusable/NavBar";
 import LogoContainer from "../reusable/LogoContainer";
+import { HeaderContact, HeaderWrapper, LogoNavbarWrapper } from "../index";
 
 const HomePage = () => {
     return (
         <>
-            <header>
-                <LogoContainer />
-                <NavBar />
-            </header>
+            <HeaderWrapper>
+                <HeaderContact />
+                <LogoNavbarWrapper>
+                    <LogoContainer />
+                    <NavBar />
+                    <NavLink to="/services">
+                        <button type="button" className="consultation-btn">
+                            Book Consultation
+                        </button>
+                    </NavLink>
+                </LogoNavbarWrapper>
+            </HeaderWrapper>
             <Outlet />
             <Footer />
         </>

@@ -1,6 +1,8 @@
+import { GalleryPageWrapper } from "../index";
+
 const GalleryPage = () => {
     return (
-        <div>GalleryPage</div>
+        <GalleryPageWrapper>GalleryPage</GalleryPageWrapper>
     );
 };
 export default GalleryPage;

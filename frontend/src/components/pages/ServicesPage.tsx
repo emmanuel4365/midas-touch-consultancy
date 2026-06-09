@@ -1,9 +1,11 @@
+import { ServicesPageWrapper } from "../index";
 import { NavLink } from "react-router-dom";
+
 
 const ServicesPage = () => {
     return (
         <>
-            <div>ServicesPage</div>
+            <ServicesPageWrapper>ServicesPage</ServicesPageWrapper>
             <NavLink to="/about">Go to About Page</NavLink>
             <NavLink to="/">Go to Home Page</NavLink>
             <NavLink to="/gallery">Go to gallery Page</NavLink>

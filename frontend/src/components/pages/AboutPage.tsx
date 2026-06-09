@@ -1,6 +1,8 @@
+import { AboutPageWrapper } from "../index";
+
 const AboutPage = () => {
     return (
-        <div>AboutPage</div>
+        <AboutPageWrapper>AboutPage</AboutPageWrapper>
     );
 };
 export default AboutPage;

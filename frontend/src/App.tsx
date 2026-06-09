@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //Lazy load other pages
 // const HomePage = lazy(() => import("./components/pages/HomePage"));
 const HomePage = lazy(() => new Promise((resolve) => {
-  setTimeout(resolve, 2000);
+  setTimeout(resolve, 1000);
 }).then(() => import("./components/pages/HomePage")));
 
 const LandingPage = lazy(() => import("./components/pages/LandingPage"));
