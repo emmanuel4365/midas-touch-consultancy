@@ -6,7 +6,6 @@ const LogoNavbarWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: var(--white-background);
-  /* background-color: black; */
   padding: var(--pd-vertical-sect-align);
 
   .midas-logo {

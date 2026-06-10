@@ -11,7 +11,7 @@ const HeaderContactWrapper = styled.div`
   .hc-phone-email-container {
     display: flex;
     align-items: center;
-    gap: var(--gap-5);
+    gap: var(--gap-16);
     font-size: var(--fs-caption);
     color: var(--white-text-caption);
   }
@@ -19,12 +19,13 @@ const HeaderContactWrapper = styled.div`
   .hc-phone-container,
   .hc-email-container {
     display: flex;
+    gap: var(--gap-4);
   }
 
   .hc-socials-container {
     display: flex;
     align-items: center;
-    gap: var(--gap-5);
+    gap: var(--gap-16);
   }
 
   .hc-socials-container a {

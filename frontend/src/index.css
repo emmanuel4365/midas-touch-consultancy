@@ -11,7 +11,7 @@
   --fs-dl: 3.25rem;
   --fs-dm: 2.875rem;
   --fs-ds: 2.5625rem;
-  --fs-h1: 2.25rem;
+  --fs-h1: 3rem;
   --fs-h2: 2rem;
   --fs-h3: 1.8125rem;
   --fs-h4: 1.625rem;
@@ -36,16 +36,23 @@
   --pd-btn: 8px 16px;
 
   /* gap */
-  --gap-5: 5px;
+  --gap-2: 2px;
+  --gap-4: 4px;
+  --gap-8: 8px;
+  --gap-16: 16px;
+  --gap-24: 24px;
 
   /* border */
-  --border-radius: 5px;
+  --border-radius: 8px;
 }
 
 html {
   font-family: "Hind", sans-serif;
   overflow-x: hidden;
+  overflow-wrap: break-word;
   font-size: var(--fs-base);
+  scroll-behavior: smooth;
+  text-wrap: balance;
 }
 
 h1,
@@ -55,30 +62,42 @@ h4,
 h5,
 h6 {
   font-family: "Khand", sans-serif;
+  text-wrap: balance;
 }
 
 h1 {
   font-size: var(--fs-h1);
+  line-height: 1.15;
 }
 
 h2 {
   font-size: var(--fs-h2);
+  line-height: 1.2;
 }
 
 h3 {
   font-size: var(--fs-h3);
+  line-height: 1.25;
 }
 
 h4 {
   font-size: var(--fs-h4);
+  line-height: 1.3;
 }
 
 h5 {
   font-size: var(--fs-h5);
+  line-height: 1.35;
 }
 
 h6 {
   font-size: var(--fs-h6);
+  line-height: 1.4;
+}
+
+p {
+  text-wrap: balance;
+  line-height: 1.5;
 }
 
 #root {

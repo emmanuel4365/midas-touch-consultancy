@@ -13,6 +13,7 @@ import ContactPageWrapper from "./wrappers/ContactPageWrapper";
 import AboutPageWrapper from "./wrappers/AboutPageWrapper";
 import LandingPageWrapper from "./wrappers/LandingPageWrapper";
 import HeaderContactWrapper from "./wrappers/HeaderContactWrapper";
+import HeroSectionWrapper from "./wrappers/HeroSectionWrapper";
 
 //Export components
 export {
@@ -28,4 +29,5 @@ export {
   AboutPageWrapper,
   LandingPageWrapper,
   HeaderContactWrapper,
+  HeroSectionWrapper,
 };
