@@ -14,14 +14,15 @@ import AboutPageWrapper from "./wrappers/AboutPageWrapper";
 import LandingPageWrapper from "./wrappers/LandingPageWrapper";
 import HeaderContactWrapper from "./wrappers/HeaderContactWrapper";
 import HeroSectionWrapper from "./wrappers/HeroSectionWrapper";
+import CustomerCareWrapper from "./wrappers/CustomerCareWrapper";
+import AboutCompanyWrapper from "./wrappers/AboutCompanyWrapper";
 
-//Export components
+//Export reusable components
+export { NavBar, Footer, LogoContainer, HeaderContact };
+
+//Export wrappers
 export {
-  NavBar,
-  Footer,
   HeaderWrapper,
-  LogoContainer,
-  HeaderContact,
   LogoNavbarWrapper,
   GalleryPageWrapper,
   ServicesPageWrapper,
@@ -30,4 +31,6 @@ export {
   LandingPageWrapper,
   HeaderContactWrapper,
   HeroSectionWrapper,
+  CustomerCareWrapper,
+  AboutCompanyWrapper,
 };
