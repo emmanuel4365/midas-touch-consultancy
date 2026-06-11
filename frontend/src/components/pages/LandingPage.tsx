@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { AboutCompanyWrapper, CustomerCareWrapper, HeroSectionWrapper, LandingPageWrapper } from "../index";
 import heroImage from "../../assets/hero-image.jpg";
+import cSupportIcon from "../../assets/customer-support-icon.svg";
+import cAdviceIcon from "../../assets/customer-advice-icon.svg";
+import cSatisfactionIcon from "../../assets/customer-satisfaction-icon.svg";
+import aboutMainImage from "../../assets/about-comp-main-img.jpg";
+import aboutEllipseIcon from "../../assets/about-comp-ellipse-icon.svg";
+import aboutDotsIcon from "../../assets/about-comp-dots-icon.svg";
 
 const LandingPage = () => {
     return (
@@ -21,7 +27,7 @@ const LandingPage = () => {
             <CustomerCareWrapper>
                 <h2 className="customer-care-title">Customer Care Services</h2>
                 <div className="c-support-container">
-                    <img src="/src/assets/customer-support-icon.svg" alt="Customer support icon" className="c-support-icon" />
+                    <img src={cSupportIcon} alt="Customer support icon" className="c-support-icon" />
                     <div className="c-support-text-container">
                         <h3>24/7 Support</h3>
                         <p>Our team is available around the clock,
@@ -31,7 +37,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="c-advice-container">
-                    <img src="/src/assets/customer-advice-icon.svg" alt="Customer advice icon" className="c-advice-icon" />
+                    <img src={cAdviceIcon} alt="Customer advice icon" className="c-advice-icon" />
                     <div className="c-advice-text-container">
                         <h3>Unlimited Advice</h3>
                         <p>Get unlimited expert guidance across governance, finance, audit, and compliance.
@@ -39,7 +45,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="c-satisfaction-container">
-                    <img src="/src/assets/customer-satisfaction-icon.svg" alt="Customer satisfaction icon" className="c-satisfaction-icon" />
+                    <img src={cSatisfactionIcon} alt="Customer satisfaction icon" className="c-satisfaction-icon" />
                     <div className="c-satisfaction-text-container">
                         <h3>100% Customer satisfaction</h3>
                         <p>We are committed to delivering exceptional results, and ensuring every client is fully satisfied.
@@ -49,9 +55,9 @@ const LandingPage = () => {
             </CustomerCareWrapper>
             <AboutCompanyWrapper>
                 <div className="about-images-container">
-                    <img src="/src/assets/about-comp-main-img.jpg" className="About Section Main Image" />
-                    <img src="/src/assets/about-comp-ellipse-icon.svg" className="About Section Ellipse Icon" />
-                    <img src="/src/assets/about-comp-dots-icon.svg" className="About Section Dots Icon" />
+                    <img src={aboutMainImage} className="About Section Main Image" />
+                    <img src={aboutEllipseIcon} className="About Section Ellipse Icon" />
+                    <img src={aboutDotsIcon} className="About Section Dots Icon" />
                 </div>
                 <div className="about-text-button-container">
                     <h2 className=""></h2>

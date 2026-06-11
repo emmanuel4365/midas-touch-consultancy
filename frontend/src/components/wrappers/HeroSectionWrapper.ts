@@ -1,4 +1,7 @@
 import styled from "styled-components";
+// import heroBGImage from "/src/assets/hero-bg-image.jpg";
+
+// console.log(heroBGImage);
 
 const HeroSectionWrapper = styled.section`
   width: 100%;
@@ -9,7 +12,7 @@ const HeroSectionWrapper = styled.section`
   padding: var(--pd-vertical-sect-align);
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-    url("/src/assets/hero-bg-image.jpg") no-repeat center center/cover;
+    url("../../assets/hero-bg-image.jpg") no-repeat center center/cover;
 
   .hero-text-content-container {
     display: flex;
