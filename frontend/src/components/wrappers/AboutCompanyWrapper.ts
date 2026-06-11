@@ -63,6 +63,7 @@ const AboutCompanyWrapper = styled.section`
     width: 500px;
     height: 400px;
     display: flex;
+    gap: var(--gap-24);
     flex-direction: column;
     align-items: start;
     justify-content: center;
@@ -83,6 +84,30 @@ const AboutCompanyWrapper = styled.section`
 
   .about-pg {
     /* width: 350px; */
+  }
+
+  .about-icon-text-container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-4);
+  }
+
+  .about-btn {
+    padding: var(--pd-btn);
+    border-radius: var(--border-radius);
+    background-color: var(--green-1);
+    color: var(--white-text-body);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
   }
 `;
 export default AboutCompanyWrapper;

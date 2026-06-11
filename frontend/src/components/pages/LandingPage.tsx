@@ -88,9 +88,11 @@ const LandingPage = () => {
                             </span>
                         </div>
                     </div>
-                    <button className="about-btn">
-                        Discover our services
-                    </button>
+                    <NavLink to="/services">
+                        <button className="about-btn">
+                            Discover our services
+                        </button>
+                    </NavLink>
                 </div>
             </AboutCompanyWrapper>
         </LandingPageWrapper>
