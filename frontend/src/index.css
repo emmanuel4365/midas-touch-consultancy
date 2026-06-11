@@ -33,7 +33,8 @@
   /* padding */
   --pd-vertical-sect-align: 5px 20px;
   --pd-links: 4px 8px;
-  --pd-btn: 8px 16px;
+  /* --pd-btn: 8px 16px; */
+  --pd-btn: 16px 24px;
 
   /* gap */
   --gap-2: 2px;
