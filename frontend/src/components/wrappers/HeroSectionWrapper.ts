@@ -1,7 +1,4 @@
 import styled from "styled-components";
-// import heroBGImage from "/src/assets/hero-bg-image.jpg";
-
-// console.log(heroBGImage);
 
 const HeroSectionWrapper = styled.section`
   width: 100%;
@@ -28,11 +25,11 @@ const HeroSectionWrapper = styled.section`
     width: 500px;
     height: 300px;
     overflow: hidden;
+    border-radius: var(--border-radius-20);
   }
 
   .hero-image {
     width: 100%;
-    border-radius: var(--border-radius);
     /* object-fit: cover; */
   }
 

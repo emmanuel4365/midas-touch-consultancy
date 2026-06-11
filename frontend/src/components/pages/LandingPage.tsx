@@ -7,6 +7,7 @@ import cSatisfactionIcon from "../../assets/customer-satisfaction-icon.svg";
 import aboutMainImage from "../../assets/about-comp-main-img.jpg";
 import aboutEllipseIcon from "../../assets/about-comp-ellipse-icon.svg";
 import aboutDotsIcon from "../../assets/about-comp-dots-icon.svg";
+import aboutPaperIcon from "../../assets/about-comp-paper-icon.svg";
 
 const LandingPage = () => {
     return (
@@ -55,12 +56,41 @@ const LandingPage = () => {
             </CustomerCareWrapper>
             <AboutCompanyWrapper>
                 <div className="about-images-container">
-                    <img src={aboutMainImage} className="About Section Main Image" />
-                    <img src={aboutEllipseIcon} className="About Section Ellipse Icon" />
-                    <img src={aboutDotsIcon} className="About Section Dots Icon" />
+                    <div className="about-section-main-img"><img className="about-img1" src={aboutMainImage} alt="About Section Main Image" />
+                    </div>
+                    <div className="about-section-ellipse"><img className="about-img2" src={aboutEllipseIcon} alt="About Section Ellipse Icon" />
+                    </div>
+                    <div className="about-section-dots" ><img className="about-img3" src={aboutDotsIcon} alt="About Section Dots Icon" />
+                    </div>
                 </div>
                 <div className="about-text-button-container">
-                    <h2 className=""></h2>
+                    <h2 className="about-title">
+                        About Company
+                    </h2>
+                    <h3 className="about-subtitle">
+                        Driving Organizational
+                        Excellence, Empowering People
+                    </h3>
+                    <p className="about-pg">
+                        Midas Touch Consultancy is a multidisciplinary professional services and capacity-building firm made up of seasoned professionals dedicated to transforming institutions and individuals through excellence in governance, finance, audit, compliance, taxation, monitoring and evaluation, and professional education.
+                    </p>
+                    <div className="about-icon-text-container">
+                        <div className="about-icon-text about-it1">
+                            <img src={aboutPaperIcon} alt="About Paper Icon" className="about-paper-icon about-pi1" />
+                            <span className="about-paper-text about-pt1">
+                                Experienced Team
+                            </span>
+                        </div>
+                        <div className="about-icon-text about-it2">
+                            <img src={aboutPaperIcon} alt="About Paper Icon" className="about-paper-icon about-pi2" />
+                            <span className="about-paper-text about-pt2">
+                                Excellent success
+                            </span>
+                        </div>
+                    </div>
+                    <button className="about-btn">
+                        Discover our services
+                    </button>
                 </div>
             </AboutCompanyWrapper>
         </LandingPageWrapper>
