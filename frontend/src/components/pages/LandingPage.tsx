@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { CustomerCareWrapper, HeroSectionWrapper, LandingPageWrapper } from "../index";
+import { AboutCompanyWrapper, CustomerCareWrapper, HeroSectionWrapper, LandingPageWrapper } from "../index";
+import heroImage from "../../assets/hero-image.jpg";
 
 const LandingPage = () => {
     return (
@@ -14,7 +15,7 @@ const LandingPage = () => {
                     <NavLink to="/services"><button className="hero-button">Book Consultation</button></NavLink>
                 </div>
                 <div className="hero-image-container">
-                    <img src="/src/assets/hero-image.jpg" alt="Hero Image" className="hero-image" />
+                    <img src={heroImage} alt="Hero Image" className="hero-image" />
                 </div>
             </HeroSectionWrapper>
             <CustomerCareWrapper>
@@ -46,6 +47,16 @@ const LandingPage = () => {
                     </div>
                 </div>
             </CustomerCareWrapper>
+            <AboutCompanyWrapper>
+                <div className="about-images-container">
+                    <img src="/src/assets/about-comp-main-img.jpg" className="About Section Main Image" />
+                    <img src="/src/assets/about-comp-ellipse-icon.svg" className="About Section Ellipse Icon" />
+                    <img src="/src/assets/about-comp-dots-icon.svg" className="About Section Dots Icon" />
+                </div>
+                <div className="about-text-button-container">
+                    <h2 className=""></h2>
+                </div>
+            </AboutCompanyWrapper>
         </LandingPageWrapper>
     );
 };
