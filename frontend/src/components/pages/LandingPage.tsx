@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { AboutCompanyWrapper, CustomerCareWrapper, HeroSectionWrapper, LandingPageWrapper } from "../index";
+import { AboutCompanyWrapper, ClienteleWrapper, CustomerCareWrapper, HeroSectionWrapper, LandingPageWrapper, ServicesWrapper } from "../index";
 import heroImage from "../../assets/hero-image.jpg";
 import cSupportIcon from "../../assets/customer-support-icon.svg";
 import cAdviceIcon from "../../assets/customer-advice-icon.svg";
@@ -8,6 +8,15 @@ import aboutMainImage from "../../assets/about-comp-main-img.jpg";
 import aboutEllipseIcon from "../../assets/about-comp-ellipse-icon.svg";
 import aboutDotsIcon from "../../assets/about-comp-dots-icon.svg";
 import aboutPaperIcon from "../../assets/about-comp-paper-icon.svg";
+import corpIcon from "../../assets/corp-services-icon.svg";
+import hdevIcon from "../../assets/human-dev-icon.svg";
+import bornoLogo from "../../assets/borno-logo.svg";
+import cbiLogo from "../../assets/cbi-logo.svg";
+import greenLogo from "../../assets/greencode-logo.svg";
+import gepadcLogo from "../../assets/gepadc-logo.svg";
+import sooyaLogo from "../../assets/sooya-logo.svg";
+import catholicLogo from "../../assets/catholic-logo.svg";
+import fradLogo from "../../assets/frad-logo.svg";
 
 const LandingPage = () => {
     return (
@@ -95,6 +104,87 @@ const LandingPage = () => {
                     </NavLink>
                 </div>
             </AboutCompanyWrapper>
+            <ServicesWrapper>
+                <h2 className="services-title">
+                    Our Services
+                </h2>
+                <h3 className="services-subtitle">
+                    What we do Best
+                </h3>
+                <div className="corp-hdev-container">
+                    <div className="corp-container service">
+                        <div className="corp-box box">CORPORATE SERVICES</div>
+                        <div className="corp-icon-container icon-container">
+                            <img src={corpIcon} alt="corporate services icon" className="corp-icon" />
+                        </div>
+                        <NavLink to="/services"><button className="corp-btn">Learn More</button></NavLink>
+                    </div>
+                    <div className="hdev-container service">
+                        <div className="hdev-box box">HUMAN CAPITAL DEVELOPMENT</div>
+                        <div className="hdev-icon-container icon-container">
+                            <img src={hdevIcon} alt="human development icon" className="hdev-icon" />
+                        </div>
+                        <NavLink to="/services"><button className="hdev-btn">Learn More</button></NavLink>
+                    </div>
+                </div>
+            </ServicesWrapper>
+            <ClienteleWrapper>
+                <h2 className="client-title">
+                    Our Clientele
+                </h2>
+                <h3 className="client-subtitle">
+                    Our Trusted Brands
+                </h3>
+                <div className="brands-container">
+                    <div className="client-brands-container brands original">
+                        <div className="brand b1">
+                            <img src={bornoLogo} className="brand1" alt="Borno state government logo" />
+                        </div>
+                        <div className="brand b2">
+                            <img src={cbiLogo} className="brand2" alt="Care best initiative logo" />
+                        </div>
+                        <div className="brand b3">
+                            <img src={greenLogo} className="brand3" alt="Green code logo" />
+                        </div>
+                        <div className="brand b4">
+                            <img src={gepadcLogo} className="brand4" alt="GEPADC logo" />
+                        </div>
+                        <div className="brand b5">
+                            <img src={sooyaLogo} className="brand5" alt="Sooyah bistro logo" />
+                        </div>
+                        <div className="brand b6">
+                            <img src={fradLogo} className="brand6" alt="FRAD foundation logo" />
+                        </div>
+                        <div className="brand b7">
+                            <img src={catholicLogo} className="brand7" alt="Catholic relief service logo" />
+                        </div>
+                    </div>
+                    <div className="client-brands-container brands copy">
+                        <div className="brand b1">
+                            <img src={bornoLogo} className="brand1" alt="Borno state government logo" />
+                        </div>
+                        <div className="brand b2">
+                            <img src={cbiLogo} className="brand2" alt="Care best initiative logo" />
+                        </div>
+                        <div className="brand b3">
+                            <img src={greenLogo} className="brand3" alt="Green code logo" />
+                        </div>
+                        <div className="brand b4">
+                            <img src={gepadcLogo} className="brand4" alt="GEPADC logo" />
+                        </div>
+                        <div className="brand b5">
+                            <img src={sooyaLogo} className="brand5" alt="Sooyah bistro logo" />
+                        </div>
+                        <div className="brand b6">
+                            <img src={fradLogo} className="brand6" alt="FRAD foundation logo" />
+                        </div>
+                        <div className="brand b7">
+                            <img src={catholicLogo} className="brand7" alt="Catholic relief service logo" />
+                        </div>
+                    </div>
+
+                </div>
+            </ClienteleWrapper>
         </LandingPageWrapper>
     );
 };

@@ -1,0 +1,47 @@
+import React, { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
+// Register the hook
+gsap.registerPlugin(useGSAP);
+
+const LogoMarquee = () => {
+  const slider = useRef(null);
+
+  useGSAP(() => {
+    // Animate the logo track
+    gsap.to(slider.current, {
+      xPercent: -50, // Move exactly 50% (the width of the original set)
+      duration: 20, // Adjust speed here (higher = slower)
+      ease: 'none', // Linear animation
+      repeat: -1, // Infinite loop
+    });
+  }, { scope: slider }); // Scope selectors to the slider container
+
+  return (
+    <div className="overflow-hidden whitespace-nowrap w-full py-8 flex">
+      {/* Container for the animation */}
+      <div ref={slider} className="flex flex-nowrap min-w-full">
+        
+        {/* Original Set of Logos */}
+        <div className="flex items-center justify-around min-w-full gap-12 pr-12">
+          <img src="/logo1.png" alt="Company 1" className="h-12" />
+          <img src="/logo2.png" alt="Company 2" className="h-12" />
+          <img src="/logo3.png" alt="Company 3" className="h-12" />
+          <img src="/logo4.png" alt="Company 4" className="h-12" />
+        </div>
+
+        {/* Exact Duplicate for Seamless Loop */}
+        <div className="flex items-center justify-around min-w-full gap-12 pr-12">
+          <img src="/logo1.png" alt="Company 1" className="h-12" />
+          <img src="/logo2.png" alt="Company 2" className="h-12" />
+          <img src="/logo3.png" alt="Company 3" className="h-12" />
+          <img src="/logo4.png" alt="Company 4" className="h-12" />
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default LogoMarquee;

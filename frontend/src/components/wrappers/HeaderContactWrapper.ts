@@ -6,7 +6,7 @@ const HeaderContactWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: var(--green-1);
-  padding: var(--pd-vertical-sect-align);
+  padding: var(--pd-header);
 
   .hc-phone-email-container {
     display: flex;

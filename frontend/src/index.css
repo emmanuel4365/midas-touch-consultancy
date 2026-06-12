@@ -31,9 +31,10 @@
   --black-text: hsl(0, 0%, 0%);
 
   /* padding */
-  --pd-vertical-sect-align: 5px 20px;
+  --pd-vertical-sect-align: 10px 100px;
+  --pd-header: 0 87px 0 100px;
   --pd-links: 4px 8px;
-  /* --pd-btn: 8px 16px; */
+  --pd-btn-small: 8px 16px;
   --pd-btn: 16px 24px;
 
   /* gap */

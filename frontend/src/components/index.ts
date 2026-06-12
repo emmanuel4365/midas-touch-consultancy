@@ -16,6 +16,8 @@ import HeaderContactWrapper from "./wrappers/HeaderContactWrapper";
 import HeroSectionWrapper from "./wrappers/HeroSectionWrapper";
 import CustomerCareWrapper from "./wrappers/CustomerCareWrapper";
 import AboutCompanyWrapper from "./wrappers/AboutCompanyWrapper";
+import ServicesWrapper from "./wrappers/ServicesWrapper";
+import ClienteleWrapper from "./wrappers/ClienteleWrapper";
 
 //Export reusable components
 export { NavBar, Footer, LogoContainer, HeaderContact };
@@ -33,4 +35,6 @@ export {
   HeroSectionWrapper,
   CustomerCareWrapper,
   AboutCompanyWrapper,
+  ServicesWrapper,
+  ClienteleWrapper,
 };
