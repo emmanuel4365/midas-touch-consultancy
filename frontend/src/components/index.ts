@@ -18,6 +18,8 @@ import CustomerCareWrapper from "./wrappers/CustomerCareWrapper";
 import AboutCompanyWrapper from "./wrappers/AboutCompanyWrapper";
 import ServicesWrapper from "./wrappers/ServicesWrapper";
 import ClienteleWrapper from "./wrappers/ClienteleWrapper";
+import AccreditWrapper from "./wrappers/AccreditWrapper";
+import TestimonialWrapper from "./wrappers/TestimonialWrapper";
 
 //Export reusable components
 export { NavBar, Footer, LogoContainer, HeaderContact };
@@ -37,4 +39,6 @@ export {
   AboutCompanyWrapper,
   ServicesWrapper,
   ClienteleWrapper,
+  AccreditWrapper,
+  TestimonialWrapper,
 };

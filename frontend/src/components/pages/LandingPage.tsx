@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { AboutCompanyWrapper, ClienteleWrapper, CustomerCareWrapper, HeroSectionWrapper, LandingPageWrapper, ServicesWrapper } from "../index";
+import { AboutCompanyWrapper, AccreditWrapper, ClienteleWrapper, CustomerCareWrapper, HeroSectionWrapper, LandingPageWrapper, ServicesWrapper, TestimonialWrapper } from "../index";
 import heroImage from "../../assets/hero-image.jpg";
 import cSupportIcon from "../../assets/customer-support-icon.svg";
 import cAdviceIcon from "../../assets/customer-advice-icon.svg";
@@ -20,6 +20,11 @@ import fradLogo from "../../assets/frad-logo.svg";
 import gsap from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
+import citnLogo from "../../assets/citn-logo.svg";
+import cipmLogo from "../../assets/cipm-logo.svg";
+import icanLogo from "../../assets/ican-logo.svg";
+import icsanLogo from "../../assets/icsan-logo.svg";
+import starsIcon from "../../assets/stars-icon.svg";
 
 const LandingPage = () => {
     const container = useRef(null);
@@ -209,6 +214,65 @@ const LandingPage = () => {
 
                 </div>
             </ClienteleWrapper>
+            <AccreditWrapper>
+                <h2 className="accredit-title">
+                    Accrediations and Memberships
+                </h2>
+                <h3 className="accredit-subtitle">
+                    Our Accrediation Partners
+                </h3>
+                <div className="accredit-brands-container brands">
+                    <div className="accredit-brand b1">
+                        <img src={citnLogo} className="brand1" alt="CITN logo" />
+                    </div>
+                    <div className="accredit-brand b2">
+                        <img src={cipmLogo} className="brand2" alt="CIPM logo" />
+                    </div>
+                    <div className="accredit-brand b3">
+                        <img src={icanLogo} className="brand3" alt="ICAN logo" />
+                    </div>
+                    <div className="accredit-brand b4">
+                        <img src={icsanLogo} className="brand4" alt="ICSAN logo" />
+                    </div>
+                </div>
+            </AccreditWrapper>
+            <TestimonialWrapper>
+                <h2 className="testify-title">
+                    TESTIMONIAL
+                </h2>
+                <h3 className="testify-subtitle">
+                    What Our Client Says About Us
+                </h3>
+                <div className="testimonies-container">
+                    <div className="testimony testimony1">
+                        <img src={starsIcon} alt="testimony stars" className="t-star star1" />
+                        <p className="t-statement statement1">
+                            I attended their tutorial centre for my Skills level exam (May diet) and passed four out of five courses in one go! The instructors were exceptional, providing personalized attention and guidance that helped me excel. I'm grateful for the supportive learning environment and the significant impact it had on my academic success.
+                        </p>
+                        <span className="testifier">
+                            <strong className="testifier-name name1">Shepherdess Bulus Wayar</strong>, Student
+                        </span>
+                    </div>
+                    <div className="testimony testimony2">
+                        <img src={starsIcon} alt="testimony stars" className="t-star star2" />
+                        <p className="t-statement statement2">
+                            MIDAS TOUCH reassured me to believe in myself. I registered as an ICAN student a decade ago, sat for two diets, and gave up. This year, the center was recommended for me, and I accepted. I registered, attended and participated in the class, sat for May 2024 diet and cleared 2 out of 3 papers.
+                        </p>
+                        <span className="testifier">
+                            <strong className="testifier-name name2">Joy Malgwi</strong>, Student
+                        </span>
+                    </div>
+                    <div className="testimony testimony3">
+                        <img src={starsIcon} alt="testimony stars" className="t-star star3" />
+                        <p className="t-statement statement3">
+                            I am delighted to share our positive experience with Midas Touch Consult. Their services have significantly transformed our operations, particularly in reducing costs and minimizing waste through their sound internal controls. Midas Touch Consult conducted a thorough analysis of our processes and implemented tailored internal control systems that have enhanced our efficiency.
+                        </p>
+                        <span className="testifier">
+                            <strong className="testifier-name name3">Eboh Precious</strong>, COO, Food Ratata Ltd
+                        </span>
+                    </div>
+                </div>
+            </TestimonialWrapper>
         </LandingPageWrapper>
     );
 };
