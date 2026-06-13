@@ -6,6 +6,7 @@ const ClienteleWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   gap: var(--gap-4);
+  overflow: hidden;
   padding: var(--pd-vertical-sect-align);
 
   .client-title {
@@ -21,29 +22,35 @@ const ClienteleWrapper = styled.section`
   }
 
   .brands-container {
-    width: 100%;
+    width: 960px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 139px;
-    position: relative;
     overflow: hidden;
+    height: 150px;
+    /* gap: 24px; */
   }
 
-  .client-brands-container {
+  #original {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    img {
-      display: block;
-    }
+    /* gap: var(--gap-24); */
+    /* padding-right: 52px; */
   }
 
-  .copy {
-    top: 0;
-    left: 100%;
+  #original img,
+  #copy img {
+    display: block;
   }
+
+  #copy {
+    width: 100%;
+    display: flex;
+    /* gap: var(--gap-24); */
+  }
+
+  /* .brand{
+    flex-grow: 0;
+    flex-shrink: 0;
+  } */
 `;
 export default ClienteleWrapper;

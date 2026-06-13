@@ -17,8 +17,33 @@ import gepadcLogo from "../../assets/gepadc-logo.svg";
 import sooyaLogo from "../../assets/sooya-logo.svg";
 import catholicLogo from "../../assets/catholic-logo.svg";
 import fradLogo from "../../assets/frad-logo.svg";
+import gsap from "gsap";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
 
 const LandingPage = () => {
+    const container = useRef(null);
+    const container2 = useRef(null);
+
+    useGSAP(() => {
+
+        gsap.to(container.current, {
+            xPercent: -100,
+            repeat: -1,
+            duration: 10,
+            ease: "none"
+        });
+
+        gsap.to(container2.current, {
+            xPercent: -100,
+            repeat: -1,
+            duration: 10,
+            ease: "none"
+        });
+    }, []);
+
+
+
     return (
         <LandingPageWrapper>
             <HeroSectionWrapper>
@@ -135,8 +160,8 @@ const LandingPage = () => {
                 <h3 className="client-subtitle">
                     Our Trusted Brands
                 </h3>
-                <div className="brands-container">
-                    <div className="client-brands-container brands original">
+                <div className="brands-container" >
+                    <div ref={container} className="client-brands-container brands original" id="original">
                         <div className="brand b1">
                             <img src={bornoLogo} className="brand1" alt="Borno state government logo" />
                         </div>
@@ -159,7 +184,7 @@ const LandingPage = () => {
                             <img src={catholicLogo} className="brand7" alt="Catholic relief service logo" />
                         </div>
                     </div>
-                    <div className="client-brands-container brands copy">
+                    <div ref={container2} className="client-brands-container brands copy" id="copy">
                         <div className="brand b1">
                             <img src={bornoLogo} className="brand1" alt="Borno state government logo" />
                         </div>
