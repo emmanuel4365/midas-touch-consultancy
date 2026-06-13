@@ -26,7 +26,6 @@ const LandingPage = () => {
     const container2 = useRef(null);
 
     useGSAP(() => {
-
         gsap.to(container.current, {
             xPercent: -100,
             repeat: -1,
