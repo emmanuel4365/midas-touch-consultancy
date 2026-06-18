@@ -1,13 +1,12 @@
-// import { NavLink } from "react-router-dom";
-import { LandingPageWrapper } from "../index";
-// import heroImage from "../../assets/hero-image.jpg";
+import { NavLink } from "react-router-dom";
+import { HeroSectionWrapper, LandingPageWrapper } from "../index";
+import heroImage from "../../assets/hero-image.jpg";
 
 
 const LandingPage = () => {
     return (
         <LandingPageWrapper>
-            LandingPage
-            {/* <HeroSectionWrapper>
+            <HeroSectionWrapper>
                 <div className="hero-text-content-container">
                     <h1>Transforming Institutions, Empowering Professionals</h1>
                     <p id="hero-para">Midas Touch Consultancy provides expert advisory and professional training,
@@ -19,7 +18,7 @@ const LandingPage = () => {
                 <div className="hero-image-container">
                     <img src={heroImage} alt="Hero Image" className="hero-image" />
                 </div>
-            </HeroSectionWrapper> */}
+            </HeroSectionWrapper>
         </LandingPageWrapper>
     );
 };
