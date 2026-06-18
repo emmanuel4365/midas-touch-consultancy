@@ -7,6 +7,9 @@ const LogoNavbarWrapper = styled.div`
   padding: var(--pd-vertical-sect-align);
 
   @media (min-width: 350px) {
+    .midas-logo {
+      display: block;
+    }
     .navbar {
       display: none;
     }

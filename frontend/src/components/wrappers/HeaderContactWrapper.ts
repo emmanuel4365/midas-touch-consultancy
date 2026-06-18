@@ -4,6 +4,39 @@ const HeaderContactWrapper = styled.div`
   @media (min-width: 350px) {
     display: none;
   }
+
+  @media (min-width: 870px) {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--green-1);
+    padding: var(--pd-vertical-sect-align);
+
+    .hc-phone-email-container {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-16);
+      font-size: var(--fs-caption);
+      color: var(--white-text-caption);
+    }
+
+    .hc-phone-container,
+    .hc-email-container {
+      display: flex;
+      gap: var(--gap-4);
+    }
+
+    .hc-socials-container {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-16);
+    }
+
+    .hc-socials-container a {
+      height: 20px;
+    }
+  }
 `;
 
 export default HeaderContactWrapper;
