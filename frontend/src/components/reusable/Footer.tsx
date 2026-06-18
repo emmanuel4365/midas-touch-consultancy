@@ -1,15 +1,15 @@
-// import { Form, NavLink } from "react-router-dom";
+import { Form, NavLink } from "react-router-dom";
 import { FooterWrapper } from "../index";
-// import footerFBLogo from "../../assets/facebook-logo.svg";
-// import footerInstaLogo from "../../assets/instagram-logo.svg";
-// import footerLinkedInLogo from "../../assets/linkedin-logo.svg";
-// import fEmailIcon from "../../assets/footer-mail-icon.svg";
-// import fPhoneIcon from "../../assets/footer-phone-icon.svg";
+import footerFBLogo from "../../assets/facebook-logo.svg";
+import footerInstaLogo from "../../assets/instagram-logo.svg";
+import footerLinkedInLogo from "../../assets/linkedin-logo.svg";
+import fEmailIcon from "../../assets/footer-mail-icon.svg";
+import fPhoneIcon from "../../assets/footer-phone-icon.svg";
 
 const Footer = () => {
     return (
         <FooterWrapper>
-            {/* <Form className="sub-form-container">
+            <Form className="sub-form-container">
                 <span className="sub-text">
                     Subscribe now
                 </span>
@@ -90,7 +90,7 @@ const Footer = () => {
             </div>
             <p className="copyright-container">
                 © 2026 The Midas Touch Consultancy. All rights reserved.
-            </p> */}
+            </p>
         </FooterWrapper>
     );
 };

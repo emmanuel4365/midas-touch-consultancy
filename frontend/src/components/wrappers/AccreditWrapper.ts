@@ -39,6 +39,12 @@ const AccreditWrapper = styled.section`
       .brand2 {
         transform: scale(0.8);
       }
+
+      .brand4 {
+        transform: scale(1.5);
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
     }
   }
 
@@ -49,6 +55,10 @@ const AccreditWrapper = styled.section`
       flex-direction: row;
       align-items: space-between;
       justify-content: center;
+    }
+
+    .brand4 {
+      transform: scale(1.5);
     }
   }
 `;
