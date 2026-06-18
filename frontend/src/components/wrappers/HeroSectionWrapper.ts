@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeroSectionWrapper = styled.section`
   @media (min-width: 350px) {
-    min-height: 500px;
+    min-height: 450px;
     display: grid;
     gap: var(--gap-24);
     padding: 1% 2%;
@@ -55,6 +55,35 @@ const HeroSectionWrapper = styled.section`
       border: none;
       border-radius: var(--border-radius);
       cursor: pointer;
+    }
+  }
+
+  @media (min-width: 950px) {
+    .hero-text-content-container {
+      width: 450px;
+    }
+
+    .hero-text-content-container h1 {
+      font-size: var(--fs-h1);
+    }
+
+    .hero-text-content-container p {
+      font-size: var(--fs-body);
+    }
+
+    .hero-image-container {
+      width: 450px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: var(--border-radius-20);
+    }
+
+    .hero-image {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      transform: scale(1.7) translate(3%, 18%);
+      /* object-fit: cover; */
     }
   }
 `;
