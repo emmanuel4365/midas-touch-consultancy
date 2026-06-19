@@ -7,6 +7,9 @@ import fEmailIcon from "../../assets/footer-mail-icon.svg";
 import fPhoneIcon from "../../assets/footer-phone-icon.svg";
 
 const Footer = () => {
+
+    let year = new Date().getFullYear();
+
     return (
         <FooterWrapper>
             <Form className="sub-form-container">
@@ -55,7 +58,6 @@ const Footer = () => {
                         The Company is available
                         during working hours
                     </p>
-                    <br />
                     <p className="wh-text text2">
                         Mon - Fri  9:00AM - 6:00PM
                     </p>
@@ -89,7 +91,7 @@ const Footer = () => {
                 </div>
             </div>
             <p className="copyright-container">
-                © 2026 The Midas Touch Consultancy. All rights reserved.
+                © {year} The Midas Touch Consultancy. All rights reserved.
             </p>
         </FooterWrapper>
     );
