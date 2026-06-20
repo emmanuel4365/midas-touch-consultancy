@@ -8,12 +8,14 @@ const SideBarNavWrapper = styled.section`
     top: 0;
     left: 0;
     right: 0;
-    min-height: 100vh;
+    height: 100vh;
     padding: 1% 10%;
+    overflow-y: scroll;
+    /* transform: translateX(100%); */
 
     .sidebar-nav {
       /* background-color: white; */
-      height: 800px;
+      height: 350px;
     }
 
     .sidebar-logo-icon {
@@ -25,6 +27,8 @@ const SideBarNavWrapper = styled.section`
       padding-bottom: 6px;
       /* border-bottom: 1px solid var(--text-white); */
       border-bottom: 1px solid #6df843;
+      /* position: sticky; */
+      top: 0;
     }
 
     .sidebarLinksAndContactInfo {
@@ -58,14 +62,7 @@ const SideBarNavWrapper = styled.section`
       align-items: center;
       justify-content: center;
       gap: 20px;
-      /* margin-top: auto; */
-    }
-
-    .sidebar-copyright {
-      text-align: center;
-      color: var(--text-white);
-      font-size: var(--font-size-xs);
-      margin: 36px 0;
+      margin-top: 4px;
     }
 
     .sidebar-mail,
@@ -79,12 +76,17 @@ const SideBarNavWrapper = styled.section`
       color: #ffffff;
     }
 
+    .sidebar-phone {
+      margin-bottom: 40px;
+    }
+
     hr {
       border: none;
       border-top: 1px solid #6df843;
     }
 
     .sidebar-copyright {
+      text-align: center;
       color: #ffffff;
     }
   }
