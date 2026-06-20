@@ -3,6 +3,7 @@ import Footer from "./reusable/Footer";
 import NavBar from "./reusable/NavBar";
 import LogoContainer from "./reusable/LogoContainer";
 import HeaderContact from "./reusable/HeaderContact";
+import SideBarNav from "./reusable/SideBarNav";
 
 //Wrappers
 import LogoNavbarWrapper from "./wrappers/LogoNavbarWrapper";
@@ -22,9 +23,10 @@ import AccreditWrapper from "./wrappers/AccreditWrapper";
 import TestimonialWrapper from "./wrappers/TestimonialWrapper";
 import GetInTouchWrapper from "./wrappers/GetInTouchWrapper";
 import FooterWrapper from "./wrappers/FooterWrapper";
+import SideBarNavWrapper from "./wrappers/SideBarNavWrapper";
 
 //Export reusable components
-export { NavBar, Footer, LogoContainer, HeaderContact };
+export { NavBar, Footer, LogoContainer, HeaderContact, SideBarNav };
 
 //Export wrappers
 export {
@@ -45,4 +47,5 @@ export {
   TestimonialWrapper,
   GetInTouchWrapper,
   FooterWrapper,
+  SideBarNavWrapper,
 };
