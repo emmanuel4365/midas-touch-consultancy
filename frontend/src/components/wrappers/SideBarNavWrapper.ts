@@ -65,7 +65,7 @@ const SideBarNavWrapper = styled.section`
       align-items: center;
       justify-content: center;
       gap: 20px;
-      margin-top: 250px;
+      margin-top: 150px;
     }
 
     .sidebar-mail,
