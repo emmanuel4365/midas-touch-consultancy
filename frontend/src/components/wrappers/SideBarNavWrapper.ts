@@ -77,7 +77,7 @@ const SideBarNavWrapper = styled.section`
     }
 
     .sidebar-phone {
-      margin-bottom: 40px;
+      margin-bottom: 70px;
     }
 
     hr {
