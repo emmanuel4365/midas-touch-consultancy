@@ -34,6 +34,7 @@ const SideBarNavWrapper = styled.section`
     .sidebarLinksAndContactInfo {
       display: flex;
       flex-direction: column;
+      /* gap: 50px; */
       /* justify-content: space-between; */
       min-height: 100%;
     }
@@ -42,6 +43,7 @@ const SideBarNavWrapper = styled.section`
       display: flex;
       flex-direction: column;
       min-height: 60%;
+      /* margin-bottom: auto; */
     }
 
     .sidebar-nav-link {
@@ -62,7 +64,7 @@ const SideBarNavWrapper = styled.section`
       align-items: center;
       justify-content: center;
       gap: 20px;
-      margin-top: 4px;
+      margin-top: 90px;
     }
 
     .sidebar-mail,
@@ -77,7 +79,7 @@ const SideBarNavWrapper = styled.section`
     }
 
     .sidebar-phone {
-      margin-bottom: 70px;
+      /* margin-bottom: 70px; */
     }
 
     hr {
