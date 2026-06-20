@@ -43,6 +43,7 @@ const SideBarNavWrapper = styled.section`
       display: flex;
       flex-direction: column;
       min-height: 60%;
+      font-size: var(--fs-h3);
       /* margin-bottom: auto; */
     }
 
@@ -64,7 +65,7 @@ const SideBarNavWrapper = styled.section`
       align-items: center;
       justify-content: center;
       gap: 20px;
-      margin-top: 90px;
+      margin-top: 250px;
     }
 
     .sidebar-mail,
