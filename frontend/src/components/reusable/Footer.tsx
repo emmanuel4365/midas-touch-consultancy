@@ -84,9 +84,15 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer-socials-container">
-                        <img src={footerFBLogo} alt="footer facebook logo" className="footer-fb-logo" />
-                        <img src={footerInstaLogo} alt="footer instagram logo" className="footer-insta-logo" />
-                        <img src={footerLinkedInLogo} alt="footer linkedin logo" className="footer-linkedin-logo" />
+                        <NavLink to="https://web.facebook.com/officialmidastouch?rdid=P9qsv0wck4Cueakc&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1HCexUsnSQ%2F%3F_rdc%3D1%26_rdr#" target="_blank">
+                            <img src={footerFBLogo} alt="footer facebook logo" className="footer-fb-logo" />
+                        </NavLink>
+                        <NavLink to="https://www.instagram.com/the_midas._touch?igsh=emMwMDBwaDBiczVo" target="_blank">
+                            <img src={footerInstaLogo} alt="footer instagram logo" className="footer-insta-logo" />
+                        </NavLink>
+                        <NavLink to="https://www.linkedin.com/company/the-midas-touch-consultancy/posts/?feedView=all" target="_blank">
+                            <img src={footerLinkedInLogo} alt="footer linkedin logo" className="footer-linkedin-logo" />
+                        </NavLink>
                     </div>
                 </div>
             </div>

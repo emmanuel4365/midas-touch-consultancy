@@ -4,6 +4,7 @@ import mailLogo from "../../assets/mail-logo.svg";
 import facebookLogo from "../../assets/facebook-logo.svg";
 import instagramLogo from "../../assets/instagram-logo.svg";
 import linkedinLogo from "../../assets/linkedin-logo.svg";
+import { NavLink } from "react-router-dom";
 
 const HeaderContact = () => {
     return (
@@ -19,15 +20,15 @@ const HeaderContact = () => {
                 </div>
             </div>
             <div className="hc-socials-container">
-                <a href="https://web.facebook.com/officialmidastouch?rdid=P9qsv0wck4Cueakc&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1HCexUsnSQ%2F%3F_rdc%3D1%26_rdr#" target="_blank">
+                <NavLink to="https://web.facebook.com/officialmidastouch?rdid=P9qsv0wck4Cueakc&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1HCexUsnSQ%2F%3F_rdc%3D1%26_rdr#" target="_blank">
                     <img src={facebookLogo} alt="Facebook logo" className="hc-facebook-logo" />
-                </a>
-                <a href="https://www.instagram.com/the_midas._touch?igsh=emMwMDBwaDBiczVo" target="_blank">
+                </NavLink>
+                <NavLink to="https://www.instagram.com/the_midas._touch?igsh=emMwMDBwaDBiczVo" target="_blank">
                     <img src={instagramLogo} alt="Instagram logo" className="hc-instagram-logo" />
-                </a>
-                <a href="https://www.linkedin.com/company/the-midas-touch-consultancy/posts/?feedView=all" target="_blank">
+                </NavLink>
+                <NavLink to="https://www.linkedin.com/company/the-midas-touch-consultancy/posts/?feedView=all" target="_blank">
                     <img src={linkedinLogo} alt="LinkedIn logo" className="hc-linkedin-logo" />
-                </a>
+                </NavLink>
             </div>
         </HeaderContactWrapper>
     );

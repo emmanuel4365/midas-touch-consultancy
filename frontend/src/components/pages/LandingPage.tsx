@@ -35,6 +35,7 @@ import gitLinkedinLogo from "../../assets/git-linkedin-logo.svg";
 
 
 const LandingPage = () => {
+    window.scrollTo(0, 0);
     const container = useRef(null);
     const container2 = useRef(null);
 
@@ -331,9 +332,15 @@ const LandingPage = () => {
                     <p className="git-social-text">
                         Follow Us:
                     </p>
-                    <img src={gitFBLogo} alt="Get in touch facebook logo" className="git-insta logo" />
-                    <img src={gitInstaLogo} alt="Get in touch instagram logo" className="git-fb logo" />
-                    <img src={gitLinkedinLogo} alt="Get in touch linkedin logo" className="git-linkedin logo" />
+                    <NavLink to="https://web.facebook.com/officialmidastouch?rdid=P9qsv0wck4Cueakc&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1HCexUsnSQ%2F%3F_rdc%3D1%26_rdr#" target="_blank">
+                        <img src={gitFBLogo} alt="Get in touch facebook logo" className="git-insta logo" />
+                    </NavLink>
+                    <NavLink to="https://www.instagram.com/the_midas._touch?igsh=emMwMDBwaDBiczVo" target="_blank">
+                        <img src={gitInstaLogo} alt="Get in touch instagram logo" className="git-insta logo" />
+                    </NavLink>
+                    <NavLink to="https://www.linkedin.com/company/the-midas-touch-consultancy/posts/?feedView=all" target="_blank">
+                        <img src={gitLinkedinLogo} alt="Get in touch linkedin logo" className="git-linkedin logo" />
+                    </NavLink>
                 </div>
             </GetInTouchWrapper>
         </LandingPageWrapper>
