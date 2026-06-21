@@ -55,6 +55,7 @@ html {
   width: 100vw;
   min-height: 100vh;
   font-family: "Hind", sans-serif;
+  /* position: relative; */
   overflow-x: hidden;
   overflow-wrap: break-word;
   font-size: var(--fs-base);
@@ -71,6 +72,7 @@ body {
   width: 100%;
   min-height: 100%;
   anchor-name: --root-container;
+  /* position: relative; */
 }
 
 h1,
@@ -116,10 +118,4 @@ h6 {
 p {
   text-wrap: balance;
   line-height: 1.5;
-}
-
-@keyframes slideIn {
-  to {
-    transform: translateX(-100%);
-  }
 }

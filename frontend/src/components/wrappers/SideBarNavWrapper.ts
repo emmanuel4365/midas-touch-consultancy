@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 const SideBarNavWrapper = styled.section`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: green;
   z-index: 10;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  border: 0;
+  bottom: 0;
   padding: 1% 10%;
   overflow-y: scroll;
-  transform: translateX(100%);
+  transform: translateX(-100%);
+  transition: transform 1.5s ease-in-out;
 
   .sidebar-nav {
-    /* background-color: white; */
     height: 350px;
   }
 
@@ -26,17 +26,13 @@ const SideBarNavWrapper = styled.section`
     justify-content: space-between;
     padding-top: 4px;
     padding-bottom: 6px;
-    /* border-bottom: 1px solid var(--text-white); */
     border-bottom: 1px solid #6df843;
-    /* position: sticky; */
     top: 0;
   }
 
   .sidebarLinksAndContactInfo {
     display: flex;
     flex-direction: column;
-    /* gap: 50px; */
-    /* justify-content: space-between; */
     min-height: 100%;
   }
 
@@ -54,7 +50,6 @@ const SideBarNavWrapper = styled.section`
     color: hsl(0, 100%, 100%);
     border-radius: 20px;
     margin: auto 8px;
-    /* background-color: var(--brand-light-green); */
   }
 
   .sidebar-nav-link:hover {
@@ -71,17 +66,12 @@ const SideBarNavWrapper = styled.section`
 
   .sidebar-mail,
   .sidebar-phone {
-    /* padding: var(--padding-md); */
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 4px;
     margin: auto 8px;
     color: #ffffff;
-  }
-
-  .sidebar-phone {
-    /* margin-bottom: 70px; */
   }
 
   hr {
@@ -92,12 +82,6 @@ const SideBarNavWrapper = styled.section`
   .sidebar-copyright {
     text-align: center;
     color: #ffffff;
-  }
-  /* @media (min-width: 350px) {
-  } */
-
-  @media (min-width: 870px) {
-    display: none;
   }
 `;
 export default SideBarNavWrapper;
