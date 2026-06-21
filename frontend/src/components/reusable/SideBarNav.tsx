@@ -10,8 +10,8 @@ import { SideBarNavWrapper } from "../index";
 import { SquareMenu } from 'lucide-react';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-// import { useEffect, useRef } from "react";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+
 
 
 
@@ -35,27 +35,27 @@ const SideBarNav = () => {
         // console.log(context.data.length);
     });
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     window.addEventListener('orientationchange', () => {
-    //         location.reload();
-    //     });
+        window.addEventListener('orientationchange', () => {
+            location.reload();
+        });
 
 
-    //     window.addEventListener('resize', () => {
-    //         location.reload();
-    //     });
+        window.addEventListener('resize', () => {
+            location.reload();
+        });
 
-    //     return () => {
-    //         window.removeEventListener('orientationchange', () => {
-    //             location.reload();
-    //         }),
-    //             window.removeEventListener('resize', () => {
-    //                 location.reload();
-    //             });
-    //     };
+        return () => {
+            window.removeEventListener('orientationchange', () => {
+                location.reload();
+            }),
+                window.removeEventListener('resize', () => {
+                    location.reload();
+                });
+        };
 
-    // });
+    });
 
 
 
