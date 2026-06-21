@@ -24,6 +24,8 @@ import TestimonialWrapper from "./wrappers/TestimonialWrapper";
 import GetInTouchWrapper from "./wrappers/GetInTouchWrapper";
 import FooterWrapper from "./wrappers/FooterWrapper";
 import SideBarNavWrapper from "./wrappers/SideBarNavWrapper";
+import ContactHeroSectWrapper from "./wrappers/ContactHeroSectWrapper";
+import ContactLocationWrapper from "./wrappers/ContactLocationWrapper";
 
 //Export reusable components
 export { NavBar, Footer, LogoContainer, HeaderContact, SideBarNav };
@@ -48,4 +50,6 @@ export {
   GetInTouchWrapper,
   FooterWrapper,
   SideBarNavWrapper,
+  ContactHeroSectWrapper,
+  ContactLocationWrapper,
 };

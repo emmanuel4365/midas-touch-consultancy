@@ -13,7 +13,7 @@ const SideBarNavWrapper = styled.section`
   padding: 1% 10%;
   overflow-y: scroll;
   transform: translateX(-100%);
-  transition: transform 1.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 
   .sidebar-nav {
     height: 350px;
