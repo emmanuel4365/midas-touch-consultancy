@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./components/pages/LandingPage";
+import AboutPage from "./components/pages/AboutPage";
 // import HomePage from "./components/pages/HomePage";
 
 //Lazy load other pages
@@ -9,7 +10,7 @@ const HomePage = lazy(() => new Promise((resolve) => {
 }).then(() => import("./components/pages/HomePage")));
 
 // const LandingPage = lazy(() => import("./components/pages/LandingPage"));
-const AboutPage = lazy(() => import("./components/pages/AboutPage"));
+// const AboutPage = lazy(() => import("./components/pages/AboutPage"));
 const ServicesPage = lazy(() => import("./components/pages/ServicesPage"));
 const GalleryPage = lazy(() => import("./components/pages/GalleryPage"));
 const ContactPage = lazy(() => import("./components/pages/ContactPage"));
@@ -33,9 +34,9 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: (
-          <Suspense fallback="Loading...">
-            <AboutPage />
-          </Suspense>
+          // <Suspense fallback="Loading...">
+          <AboutPage />
+          // </Suspense>
         ),
         errorElement: <div>Error loading page</div>,
       },

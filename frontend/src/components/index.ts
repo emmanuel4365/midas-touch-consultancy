@@ -11,7 +11,6 @@ import HeaderWrapper from "./wrappers/HeaderWrapper";
 import GalleryPageWrapper from "./wrappers/GalleryPageWrapper";
 import ServicesPageWrapper from "./wrappers/ServicesPageWrapper";
 import ContactPageWrapper from "./wrappers/ContactPageWrapper";
-import AboutPageWrapper from "./wrappers/AboutPageWrapper";
 import LandingPageWrapper from "./wrappers/LandingPageWrapper";
 import HeaderContactWrapper from "./wrappers/HeaderContactWrapper";
 import HeroSectionWrapper from "./wrappers/HeroSectionWrapper";
@@ -26,6 +25,12 @@ import FooterWrapper from "./wrappers/FooterWrapper";
 import SideBarNavWrapper from "./wrappers/SideBarNavWrapper";
 import ContactHeroSectWrapper from "./wrappers/ContactHeroSectWrapper";
 import ContactLocationWrapper from "./wrappers/ContactLocationWrapper";
+import AboutPageWrapper from "./wrappers/AboutPageWrapper";
+import AboutPageHeroWrapper from "./wrappers/AboutPageHeroWrapper";
+import AboutPageGrowthWrapper from "./wrappers/AboutPageGrowthWrapper";
+import AboutPageMissionWrapper from "./wrappers/AboutPageMissionWrapper";
+import AboutPageStoryWrapper from "./wrappers/AboutPageStoryWrapper";
+import AboutPageVissionWrapper from "./wrappers/AboutPageVissionWrapper";
 
 //Export reusable components
 export { NavBar, Footer, LogoContainer, HeaderContact, SideBarNav };
@@ -37,7 +42,6 @@ export {
   GalleryPageWrapper,
   ServicesPageWrapper,
   ContactPageWrapper,
-  AboutPageWrapper,
   LandingPageWrapper,
   HeaderContactWrapper,
   HeroSectionWrapper,
@@ -52,4 +56,10 @@ export {
   SideBarNavWrapper,
   ContactHeroSectWrapper,
   ContactLocationWrapper,
+  AboutPageWrapper,
+  AboutPageHeroWrapper,
+  AboutPageGrowthWrapper,
+  AboutPageStoryWrapper,
+  AboutPageMissionWrapper,
+  AboutPageVissionWrapper,
 };
