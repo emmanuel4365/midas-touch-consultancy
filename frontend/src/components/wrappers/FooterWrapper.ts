@@ -80,6 +80,7 @@ const FooterWrapper = styled.footer`
     flex-direction: column;
     align-items: space-between;
     justify-content: center;
+    gap: 16px;
   }
 
   .ilinks-nav a {
