@@ -139,6 +139,9 @@ const GalleryPage = () => {
 
     return (
         <GalleryPageWrapper>
+            <h1 className="gallery-instruction">
+                CLICK OR TAP ON ANY OF THE PHOTOS BELOW TO VIEW PHOTO-BOX
+            </h1>
             <PhotoAlbum
                 layout="rows"
                 photos={photos}
