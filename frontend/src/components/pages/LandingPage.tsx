@@ -31,15 +31,67 @@ import gitSendIcon from "../../assets/git-send-icon.svg";
 import gitFBLogo from "../../assets/git-fb-logo.svg";
 import gitInstaLogo from "../../assets/git-insta-logo.svg";
 import gitLinkedinLogo from "../../assets/git-linkedin-logo.svg";
+import { SplitText } from "gsap/SplitText";
 
 
+gsap.registerPlugin(SplitText);
 
 const LandingPage = () => {
+    //Scroll Up page
     window.scrollTo(0, 0);
+
+    //Animate Elements
     const container = useRef(null);
     const container2 = useRef(null);
 
     useGSAP(() => {
+        //Hero Section Animation
+        //Hero Title
+        const splitHeroTitle = new SplitText(".hero-title", {
+            type: "words"
+        });
+
+        gsap.from(splitHeroTitle.words, {
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.5,
+            ease: "power2.out",
+        });
+        //Hero Text Paragraph Animation
+        const splitHeroText = new SplitText("#hero-para", {
+            type: "lines"
+        });
+
+        gsap.from(splitHeroText.lines, {
+            x: -40,
+            opacity: 0,
+            delay: 0.8,
+            duration: 0.8,
+            stagger: 0.5,
+            ease: "power2.out",
+        });
+        //Hero Image Animation
+        gsap.from("#hero-image", {
+            y: -100,
+            opacity: 0,
+            delay: 0.3,
+            duration: 0.8,
+            ease: "power2.out",
+        });
+        //Hero Button Animation
+        gsap.from(".hero-button", {
+            y: 50,
+            opacity: 0,
+            delay: 0.6,
+            duration: 0.8,
+            ease: "power2.out",
+        });
+
+
+
+        //Clientele Section Animation
+        // Logos Slide Animation
         gsap.to(container.current, {
             xPercent: -100,
             repeat: -1,
@@ -53,19 +105,23 @@ const LandingPage = () => {
             duration: 10,
             ease: "none"
         });
+
+        // console.log(context.data.length);
+
+
     }, []);
     return (
         <LandingPageWrapper>
             <HeroSectionWrapper>
                 <div className="hero-text-content-container">
-                    <h1>Transforming Institutions, Empowering Professionals</h1>
+                    <h1 className="hero-title">Transforming Institutions, Empowering Professionals</h1>
                     <p id="hero-para">Midas Touch Consultancy provides expert advisory and professional training,
                         helping organizations and individuals strengthen governance, finance,
                         compliance, and operational systems,build capacity,manage risk,
                         and achieve sustainable growth and success.</p>
                     <NavLink to="/services"><button className="hero-button">Book Consultation</button></NavLink>
                 </div>
-                <div className="hero-image-container">
+                <div className="hero-image-container" id="hero-image">
                     <img src={heroImage} alt="Hero Image" className="hero-image" />
                 </div>
             </HeroSectionWrapper>
