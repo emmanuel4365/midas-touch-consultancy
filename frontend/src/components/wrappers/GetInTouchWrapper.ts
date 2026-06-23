@@ -11,7 +11,7 @@ const GetInTouchWrapper = styled.section`
     justify-content: center;
     gap: var(--gap-4);
     padding: var(--pd-vertical-sect-align);
-    background-color: #e7e7e7;
+    background-color: #d3d3d3;
 
     .git-details-container {
       width: 100%;
