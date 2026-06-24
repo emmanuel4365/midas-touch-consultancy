@@ -2,11 +2,12 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./components/pages/LandingPage";
 import AboutPage from "./components/pages/AboutPage";
+import { LoaderScreen } from "./components/index";
 // import HomePage from "./components/pages/HomePage";
 
 //Lazy load other pages
 const HomePage = lazy(() => new Promise((resolve) => {
-  setTimeout(resolve, 1000);
+  setTimeout(resolve, 5000);
 }).then(() => import("./components/pages/HomePage")));
 
 // const LandingPage = lazy(() => import("./components/pages/LandingPage"));
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element:
-      <Suspense fallback="Loading...">
+      <Suspense fallback={<LoaderScreen />}>
         <HomePage />
       </Suspense>,
     errorElement: <div>Error loading page</div>,

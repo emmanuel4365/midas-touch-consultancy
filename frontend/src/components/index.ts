@@ -4,6 +4,7 @@ import NavBar from "./reusable/NavBar";
 import LogoContainer from "./reusable/LogoContainer";
 import HeaderContact from "./reusable/HeaderContact";
 import SideBarNav from "./reusable/SideBarNav";
+import LoaderScreen from "./reusable/LoaderScreen";
 
 //Wrappers
 import LogoNavbarWrapper from "./wrappers/LogoNavbarWrapper";
@@ -33,9 +34,17 @@ import AboutPageStoryWrapper from "./wrappers/AboutPageStoryWrapper";
 import AboutPageVissionWrapper from "./wrappers/AboutPageVissionWrapper";
 import ServicesPageHeroWrapper from "./wrappers/ServicesPageHeroWrapper";
 import ServicesPageServicesWrapper from "./wrappers/ServicesPageServicesWrapper";
+import LoaderWrapper from "./wrappers/LoaderWrapper";
 
 //Export reusable components
-export { NavBar, Footer, LogoContainer, HeaderContact, SideBarNav };
+export {
+  NavBar,
+  Footer,
+  LogoContainer,
+  HeaderContact,
+  SideBarNav,
+  LoaderScreen,
+};
 
 //Export wrappers
 export {
@@ -66,4 +75,5 @@ export {
   ServicesPageWrapper,
   ServicesPageServicesWrapper,
   ServicesPageHeroWrapper,
+  LoaderWrapper,
 };
