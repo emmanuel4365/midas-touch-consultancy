@@ -7,5 +7,10 @@ const ServicesPageWrapper = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .services-git-container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 export default ServicesPageWrapper;

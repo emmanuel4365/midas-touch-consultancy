@@ -20,7 +20,7 @@ const ContactPage = () => {
                     We are here to make your consultation Easy
                 </p>
             </ContactHeroSectWrapper>
-            <GetInTouchWrapper>
+            <GetInTouchWrapper className="contact-git-container">
                 <div className="git-details-container">
                     <div className="contact-details-container">
                         <h2 className="cd-title">

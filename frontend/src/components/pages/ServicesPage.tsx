@@ -64,7 +64,7 @@ const ServicesPage = () => {
                     </div>
                 </div>
             </ServicesPageServicesWrapper>
-            <GetInTouchWrapper>
+            <GetInTouchWrapper className="services-git-container">
                 <div className="git-details-container">
                     <div className="contact-details-container">
                         <h2 className="cd-title">
