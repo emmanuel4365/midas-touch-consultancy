@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 const TestimonialWrapper = styled.section`
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  .testify-title {
+    padding: 8px;
+  }
+
   @media (min-width: 350px) {
     width: 100%;
     min-height: 440px;

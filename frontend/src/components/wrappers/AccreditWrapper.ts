@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const AccreditWrapper = styled.section`
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  .accredit-title {
+    padding: 8px;
+  }
   @media (min-width: 350px) {
     width: 100%;
     display: flex;

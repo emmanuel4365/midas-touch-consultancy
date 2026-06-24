@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const ClienteleWrapper = styled.section`
+  margin-top: 32px;
+  margin-bottom: 32px;
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,6 +19,7 @@ const ClienteleWrapper = styled.section`
     font-size: var(--fs-h4);
     border: 1px solid #287112;
     border-radius: var(--border-radius-20);
+    padding: 8px;
   }
 
   .client-subtitle {

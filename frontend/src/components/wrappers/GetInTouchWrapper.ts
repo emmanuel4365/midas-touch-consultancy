@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const GetInTouchWrapper = styled.section`
+  margin-top: 32px;
+  margin-bottom: 32px;
+
   @media (min-width: 350px) {
     width: 100%;
     min-height: 440px;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const CustomerCareWrapper = styled.section`
+  margin-top: 32px;
+  margin-bottom: 32px;
   @media (min-width: 350px) {
     display: flex;
     flex-wrap: wrap;

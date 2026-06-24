@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const ServicesWrapper = styled.section`
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  .services-title {
+    padding: 8px;
+  }
   @media (min-width: 350px) {
     display: flex;
     flex-direction: column;
@@ -9,15 +15,6 @@ const ServicesWrapper = styled.section`
     padding: var(--pd-vertical-sect-align);
     margin-top: 8px;
     margin-bottom: 8px;
-
-    .services-title {
-      width: 180px;
-      text-align: center;
-      font-weight: normal;
-      font-size: var(--fs-h4);
-      border: 1px solid #287112;
-      border-radius: var(--border-radius-20);
-    }
 
     .service {
       width: 100%;

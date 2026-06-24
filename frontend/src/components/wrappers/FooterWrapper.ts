@@ -107,12 +107,12 @@ const FooterWrapper = styled.footer`
     display: flex;
     align-items: center;
     gap: 16px;
-    padding-left: 11px;
+    /* padding-left: 11px; */
     margin-top: 8px;
   }
 
   .footer-git-title {
-    padding-left: 9px;
+    /* padding-left: 9px; */
   }
 
   @media (min-width: 350px) and (max-width: 509px) {
